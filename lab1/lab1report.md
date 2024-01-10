@@ -4,9 +4,9 @@
 
 ![Image](cd1.png)
 
-**Working directory:** /home
-**Reason:** Cd with no arguments makes your working directory /home. Because I was already in /home, it appears that nothing happened. If I was in a subdirectory, there would have been a change. 
-**Error?** Not an error
+**Working directory:** /home \
+**Reason:** Cd with no arguments makes your working directory /home. Because I was already in /home, it appears that nothing happened. If I was in a subdirectory, there would have been a change. \
+**Error?** Not an error \
 
 ## Ls - no arguments
 
