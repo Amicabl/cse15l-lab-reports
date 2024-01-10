@@ -16,7 +16,7 @@
 
 **Working directory:** /home 
 
-**Reason:** Ls with no arguments lists everything in the working in the directory. 
+**Reason:** Ls with no arguments lists everything in the working directory. 
 
 **Error?** Not an error
 
@@ -36,7 +36,7 @@
 
 **Working directory:** /home 
 
-**Reason:** Cd with a path to directory changes the working directory to the given path. You can see that my working directory becomes lecture1/.
+**Reason:** Cd with a path to directory changes the working directory to the given path. You can see that my working directory becomes lecture1/ after the command is executed.
 
 **Error?** Not an error
 
@@ -46,7 +46,7 @@
 
 **Working directory:** /home 
 
-**Reason:** Ls will list everything within the directory passed. 
+**Reason:** This will list everything within the directory passed. 
 
 **Error?** Not an error
 
