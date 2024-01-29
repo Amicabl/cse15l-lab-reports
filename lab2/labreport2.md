@@ -11,7 +11,7 @@ class Handler implements URLHandler {
     // A string holding the chat log that will be added onto with each /add-message request
     String chatLog = "";
 
-    // /add-message?s=<string>&user=<string>
+    // Intended function: /add-message?s=<string>&user=<string>
     
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -22,7 +22,6 @@ class Handler implements URLHandler {
             String temp = parameters[1];
             String[] messageTemp = temp.split("&");
             String message = messageTemp[0];
-
             chatLog += user + ": " + message + "\n";
             return chatLog;
         } else {
@@ -42,4 +41,5 @@ class ChatServer {
 
         Server.start(port, new Handler());
     }
+}
 ```
