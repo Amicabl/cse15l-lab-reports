@@ -130,19 +130,19 @@ The `user`, a colon, the `message` and a newline (`\n`) is concatenated to becom
 
 ## Part 2
 
-# Screenshot 1: Private SSH key
+### Screenshot 1: Private SSH key
 
 ![Image](lab2_private.png)
 
 Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
 
-# Screenshot 2: Public SSH key
+### Screenshot 2: Public SSH key
 
 ![Image](lab2_public.png)
 
 Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
 
-# Screenshot 3: Terminal interaction without password prompt
+### Screenshot 3: Terminal interaction without password prompt
 
 ![Image](lab2_ssh.png)
 
