@@ -56,5 +56,11 @@ class ChatServer {
 
 **What are the values of the relevant fields in the class?** 
 
-`String chatLog`: `"Amicable: Hey"`\
-`url.getPath()`: `/add-message`
+`url.getPath()`: `"/add-message"`\
+`url.getQuery()`: `"s=Hey&user=Amicable"`\
+`parameters`: `["s","Hey&user","Amicable"]`\
+`user`: `"Amicable"`\
+`temp`: `"Hey&user"`\
+`messageTemp`: `["Hey","user"]`\
+`message`: `"Hey"`\
+`chatLog`: `"Amicable: Hey"`\
