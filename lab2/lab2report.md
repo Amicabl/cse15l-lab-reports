@@ -125,5 +125,9 @@ The middle part of `parameters` is stored in `temp`.
 `message`: `"Hi!"`\
 The message is extracted from `messageTemp`.
 
+## Part 2
+
+
+
 `chatLog`: `"jpolitz: Hi!"`\
 The `user`, a colon, the `message` and a newline (`\n`) is concatenated to become `chatLog`. Because `user` and `message` have changed, `chatLog` has also changed.
