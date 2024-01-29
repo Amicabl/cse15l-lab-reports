@@ -65,6 +65,8 @@ class ChatServer {
 `message`: `"Hey"`\
 `chatLog`: `"Amicable: Hey"`
 
+**How do the values of any relevant fields of the class change from this specific request?** 
+
 ### Screenshot 2: `/add-message?s=Hi!&user=jpolitz`
 
 ![Image](lab2_2.png)
