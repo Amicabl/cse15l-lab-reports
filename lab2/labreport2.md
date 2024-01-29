@@ -46,6 +46,6 @@ class ChatServer {
 }
 ```
 
-### Screenshot 1: '/add-message?s=Hey&user=Amicable`
+### Screenshot 1: `/add-message?s=Hey&user=Amicable`
 
 ![Image](lab2_1.png)
