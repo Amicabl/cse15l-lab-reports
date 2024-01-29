@@ -50,89 +50,80 @@ class ChatServer {
 
 ![Image](lab2_1.png)
 
-**Which methods in your code are called?** The `handleRequest` method is called when the request is made.
+**Which methods in your code are called?** 
 
-**What are the relevant arguments to those methods?** The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable` is passed in as an argument.
+The `handleRequest` method is called when the request is made.
+
+**What are the relevant arguments to those methods?** 
+
+The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable` is passed in as an argument.
 
 **What are the values of the relevant fields in the class? How do the values of any relevant fields of the class change from this specific request?** 
 
 `url`: `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable`\
 The full URL gets passed in to the `handleRequest` method when the URL is loaded.
 
-`url.getPath()`: `"/add-message"`
-
+`url.getPath()`: `"/add-message"`\
 The path changes from `/` to `/add-message`.
 
-`url.getQuery()`: `"s=Hey&user=Amicable"`
-
+`url.getQuery()`: `"s=Hey&user=Amicable"`\
 There was no query before the request was made. 
 
-`parameters`: `["s","Hey&user","Amicable"]`
-
+`parameters`: `["s","Hey&user","Amicable"]`\
 The query is broken by `=` into three parts. `parameters` will be different depending on the query.
 
-`user`: `"Amicable"`
-
+`user`: `"Amicable"`\
 The `user` is extracted from the array `parameters` meaning that will be different for each request.
 
-`temp`: `"Hey&user"`
-
+`temp`: `"Hey&user"`\
 The middle part of `parameters` is stored in `temp`.
 
-`messageTemp`: `["Hey","user"]`
-
+`messageTemp`: `["Hey","user"]`\
 `temp` is then split by `&` into two parts.
 
-`message`: `"Hey"`
-
+`message`: `"Hey"`\
 The message is extracted from `messageTemp`.
 
-`chatLog`: `"Amicable: Hey"`
-
+`chatLog`: `"Amicable: Hey"`\
 The `user`, a colon, the `message` and a newline (`\n`) is concatenated to become `chatLog`.  
 
 ### Screenshot 2: `/add-message?s=Hi!&user=jpolitz`
 
 ![Image](lab2_2.png)
 
-**Which methods in your code are called?** The `handleRequest` method is called when the request is made.
+**Which methods in your code are called?** 
 
-**What are the relevant arguments to those methods?** The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hi!&user=jpolitz` is passed in as an argument.
+The `handleRequest` method is called when the request is made.
 
-**What are the values of the relevant fields in the class?** 
+**What are the relevant arguments to those methods?** 
 
-`url`: `[https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable](https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hi!&user=jpolitz)`
+The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hi!&user=jpolitz` is passed in as an argument.
 
+**What are the values of the relevant fields in the class? How do the values of any relevant fields of the class change from this specific request?** 
+
+`url`: `[https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable](https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hi!&user=jpolitz)`\
 The full URL gets passed in to the `handleRequest` method when the URL is loaded.
 
-`url.getPath()`: `"/add-message"`
-
+`url.getPath()`: `"/add-message"`\
 The path before was also `/add-message` so this value does not change.
 
-`url.getQuery()`: `"s=Hi!&user=jpolitz"`
-
+`url.getQuery()`: `"s=Hi!&user=jpolitz"`\
 The value changes because the query is different from the query during the previous request.
 
-`parameters`: `["s","Hi!&user","jpolitz"]`
-
+`parameters`: `["s","Hi!&user","jpolitz"]`\
 The query is broken by `=` into three parts. `parameters` is different from the previous request because the query is different.
 
-`user`: `"jpolitz"`
-
+`user`: `"jpolitz"`\
 The new `user` is extracted from the array. 
 
-`temp`: `"Hi!&user"`
-
+`temp`: `"Hi!&user"`\
 The middle part of `parameters` is stored in `temp`.
 
-`messageTemp`: `["Hi!","user"]`
-
+`messageTemp`: `["Hi!","user"]`\
 `temp` is then split by `&` into two parts.
 
-`message`: `"Hi!"`
-
+`message`: `"Hi!"`\
 The message is extracted from `messageTemp`.
 
-`chatLog`: `"jpolitz: Hi!"`
-
+`chatLog`: `"jpolitz: Hi!"`\
 The `user`, a colon, the `message` and a newline (`\n`) is concatenated to become `chatLog`. Because `user` and `message` have changed, `chatLog` has also changed.
