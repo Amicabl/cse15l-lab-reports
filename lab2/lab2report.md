@@ -125,9 +125,32 @@ The middle part of `parameters` is stored in `temp`.
 `message`: `"Hi!"`\
 The message is extracted from `messageTemp`.
 
-## Part 2
-
-
-
 `chatLog`: `"jpolitz: Hi!"`\
 The `user`, a colon, the `message` and a newline (`\n`) is concatenated to become `chatLog`. Because `user` and `message` have changed, `chatLog` has also changed.
+
+## Part 2
+
+# Screenshot 1: Private SSH key
+
+![Image](lab2_private.png)
+
+Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
+
+# Screenshot 2: Public SSH key
+
+![Image](lab2_public.png)
+
+Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
+
+# Screenshot 3: Terminal interaction without password prompt
+
+![Image](lab2_ssh.png)
+
+Because I have an authorized key, the `ssh` command does not prompt me for a password when connecting to `arobertson@ieng6.ucsd.edu`.
+
+## Part 3
+
+I was not aware of the difference between a path and a query prior to Labs 2 and 3. I also did not know that there was a built-in Java class that handles URL requests. I learned how I could manipulate a webpage by inputting different paths and queries using `getPath()` and `getQuery()`.
+
+
+
