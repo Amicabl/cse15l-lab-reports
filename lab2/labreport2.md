@@ -64,3 +64,22 @@ class ChatServer {
 `messageTemp`: `["Hey","user"]`\
 `message`: `"Hey"`\
 `chatLog`: `"Amicable: Hey"`
+
+### Screenshot 2: `/add-message?s=Hi!&user=jpolitz`
+
+![Image](lab2_2.png)
+
+**Which methods in your code are called?** The `handleRequest` method is called when the request is made.
+
+**What are the relevant arguments to those methods?** The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hi!&user=jpolitz` is passed in as an argument.
+
+**What are the values of the relevant fields in the class?** 
+
+`url.getPath()`: `"/add-message"`\
+`url.getQuery()`: `"s=Hi!&user=jpolitz"`\
+`parameters`: `["s","Hi!&user","jpolitz"]`\
+`user`: `"jpolitz"`\
+`temp`: `"Hi!&user"`\
+`messageTemp`: `["Hi!","user"]`\
+`message`: `"Hi!"`\
+`chatLog`: `"jpolitz: Hi!"`
