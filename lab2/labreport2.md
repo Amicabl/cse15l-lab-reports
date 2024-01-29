@@ -63,4 +63,4 @@ class ChatServer {
 `temp`: `"Hey&user"`\
 `messageTemp`: `["Hey","user"]`\
 `message`: `"Hey"`\
-`chatLog`: `"Amicable: Hey"`\
+`chatLog`: `"Amicable: Hey"`
