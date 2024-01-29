@@ -56,7 +56,7 @@ class ChatServer {
 
 **What are the values of the relevant fields in the class? How do the values of any relevant fields of the class change from this specific request?** 
 
-`url`: `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable`
+`url`: `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable` \n
 The full URL gets passed in to the `handleRequest` method when the URL is loaded.
 
 `url.getPath()`: `"/add-message"`
