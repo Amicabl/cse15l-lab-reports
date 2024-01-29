@@ -55,5 +55,6 @@ class ChatServer {
 **What are the relevant arguments to those methods?** The URI `https://0-0-0-0-4000-hkvni56f5vad4pf4ukgdo1mcqk.us.edusercontent.com/add-message?s=Hey&user=Amicable` is passed in as an argument.
 
 **What are the values of the relevant fields in the class?** 
-`String chatLog`: `"Amicable: Hey"`
-`String[] parameters`: 
+
+`String chatLog`: `"Amicable: Hey"`\
+`url.getPath()`: `/add-message`
