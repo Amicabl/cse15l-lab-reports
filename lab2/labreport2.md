@@ -1,6 +1,8 @@
 # Lab 2 Report
 
-## Code snippet of ChatServer.java
+## Part 1 
+
+### Code snippet of ChatServer.java
 
 ```java
 import java.io.IOException;
@@ -43,3 +45,5 @@ class ChatServer {
     }
 }
 ```
+
+### Screenshot 1: /add-message
