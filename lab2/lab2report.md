@@ -144,7 +144,7 @@ Because `ls` successfully prints out the absolute path, this demonstrates that t
 
 ### Screenshot 3: Terminal interaction without password prompt
 
-![Image](lab2_ssh.png)
+![Image](lab2_terminal.png)
 
 Because I have an authorized key, the `ssh` command does not prompt me for a password when connecting to `arobertson@ieng6.ucsd.edu`.
 
