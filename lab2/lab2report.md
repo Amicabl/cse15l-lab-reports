@@ -73,7 +73,7 @@ There was no query before the request was made.
 The query is broken by `=` into three parts. `parameters` will be different depending on the query.
 
 `user`: `"Amicable"`\
-The `user` is extracted from the array `parameters` meaning that will be different for each request.
+The `user` is extracted from the array `parameters`, which can change for each request.
 
 `temp`: `"Hey&user"`\
 The middle part of `parameters` is stored in `temp`.
