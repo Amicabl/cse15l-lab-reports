@@ -138,7 +138,7 @@ Because `ls` successfully prints out the absolute path, this demonstrates that t
 
 ### Screenshot 2: Public SSH key
 
-![Image](lab2_public.png)
+![Image](public_ssh.png)
 
 Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
 
