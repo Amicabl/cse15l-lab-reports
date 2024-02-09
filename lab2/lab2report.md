@@ -140,7 +140,7 @@ Because `ls` successfully prints out the absolute path, this demonstrates that t
 
 ![Image](public_ssh.png)
 
-Because `ls` successfully prints out the absolute path, this demonstrates that the location is valid. 
+`authorized_keys` is a file on the `arobertson@ieng6.ucsd.edu` server that contains the public key. The `authorized_keys` file is found in the `.ssh` directory. 
 
 ### Screenshot 3: Terminal interaction without password prompt
 
