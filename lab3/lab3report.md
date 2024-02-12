@@ -29,7 +29,7 @@ public void testReverseInPlace1() {
 ### The symptom
 
 This screenshot shows the failure within the `ArrayTests.java` file.
-![Image](lab3_tests.png)
+![Image](lab3_failure.png)
 
 This screenshot shows the "Test Results" output.
-![Image](lab3_failure.png)
+![Image](lab3_test.png)
