@@ -2,7 +2,7 @@
 
 ## Part 1
 
-For this part, I have chosen the bug with the `reverseinPlace()` method in `ArrayExamples.java.`
+For this part, I have chosen the bug with the `reverseinPlace()` method in `ArrayExamples.java`.
 
 ### A failure inducing input for the buggy program
 
