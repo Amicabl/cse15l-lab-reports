@@ -64,3 +64,28 @@ The issue with the "Before" code is that it tries to replace each element withou
 The fix in the "After" code creates a new temporary array called `temp` to store all of the original values in the `arr` array. To make sure that `arr` itself is not modified, `temp` is initialized using `arr.length` and the values from `arr` are copied over one by one using a `for` loop. `arr` is then modified by using values from the `temp` array which avoids the problem with the values being overwritten while still modifying the original array to fit the criteria of reversing in place.
 
 ## Part 2
+
+For this part, I am choosing to research the `find` command.
+
+### Option 1: Here we go
+**Source:** 
+
+**Example 1**
+**Example 2**
+
+### Option 2: Here we go
+**Source:** 
+
+**Example 1**
+**Example 2**
+
+### Option 3: Here we go
+**Source:** 
+
+**Example 1**
+**Example 2**
+
+### Option 4: Here we go
+
+**Example 1**
+**Example 2**
