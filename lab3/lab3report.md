@@ -73,7 +73,7 @@ For this part, I am choosing to research the `find` command.
 
 According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 
-**Example 1**
+**Example 1: `find . -size +100k`**
 <blockquote> 
     
 **Working Directory:** `terminal/`
@@ -114,6 +114,9 @@ amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ```
 </blockquote>
 
+**Example 2: `find government/ -size -2k -type d`**
+<blockquote>
+    
 **Working Directory:** `terminal/`
 
 To explore whether or not the `-size` test checks for directories, I modified the command from above to only search for directories using `-type d`. Looking inside the `government/` directory using `find government/`, I recursively checked for all directories with a size less than 2 kilobytes. 
