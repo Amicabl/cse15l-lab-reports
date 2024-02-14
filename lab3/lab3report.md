@@ -198,7 +198,7 @@ find: -user: bob: no such user
 
 ### Option 3: `find -empty`
 
-**Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)\
+**Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
 
 According to *Linux Handbook*, the `-empty` option would show all files and directories in the given path that are empty.
 
