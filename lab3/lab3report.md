@@ -75,7 +75,8 @@ According to `man`, the `find -size` traverses the file hierarchies in lexograph
 
 **Example 1**
 <blockquote> 
-**Working Directory**: `terminal/`
+    
+**Working Directory:** `terminal/`
 
 The code below searches the current directory `terminal/` using `find .`. The test `-size +100k` indicates that the `find` command will check all files in `.` and determine whether or not each file takes up more than 100k of space. The output is all files recursively found in `terminal/` with a size greater than 100 kilobytes. 
 
