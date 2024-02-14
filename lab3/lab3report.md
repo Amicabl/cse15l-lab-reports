@@ -76,7 +76,7 @@ For this part, I am choosing to research the `find` command.
 According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 &NewLine;
 
-**Example 1: `find . -size +100k`**
+**Example 1**
 <blockquote> 
     
 **Working Directory:** `terminal/`
@@ -117,7 +117,7 @@ amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ```
 </blockquote>
 
-**Example 2: `find government/ -size -2k -type d`**
+**Example 2**
 <blockquote>
     
 **Working Directory:** `terminal/`
@@ -159,7 +159,7 @@ Since this list is longer than the one searching for directories less than 2 kil
 According to nixCraft, `find -user` finds all files that are owned by the specified user.
 
 
-**Example 1: `find . -user amicable`** 
+**Example 1**
 <blockquote>
 
 **Working Directory:** `terminal/`
@@ -183,7 +183,7 @@ amicable@Alexas-MacBook-Pro technical % find . -user amicable | head -n 10
 ```
 </blockquote>
 
-**Example 2: `find biomed/ -user bob`**
+**Example 2**
 
 **Working Directory:** `terminal/`
 
