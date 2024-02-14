@@ -252,7 +252,7 @@ amicable@Alexas-MacBook-Pro technical % find . -mmin -60
     
 
 
-==Example 2==
+<mark>Example 2</mark>
 
 
 **Working Directory:** `terminal/`
