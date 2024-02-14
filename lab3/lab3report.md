@@ -67,15 +67,20 @@ The fix in the "After" code creates a new temporary array called `temp` to store
 
 For this part, I am choosing to research the `find` command.
 
-### Option 1: `find -s`
-**Source:** Entering `man find` into the terminal.
+### `find -size`
+**Source 1:** Entering `man find` into the terminal.
+**Source 2:** [Link](https://www.computerhope.com/unix/ufind.htm#Operators)
 
-According to `man`, the `find -s` traverses the file hierarchies in lexographical order.
+According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 
 **Example 1**
-> **Working Directory**: `terminal/`
-> ```
-> amicable@Alexas-MacBook-Pro technical % find . -size +100k
+<blockquote> 
+**Working Directory**: `terminal/`
+
+The code below searches the current directory `terminal/` using `find .`. The test `-size +100k` indicates that the `find` command will check all files in `.` and determine whether or not each file takes up more than 100k of space. The output is all files recursively found in `terminal/` with a size greater than 100 kilobytes. 
+
+```
+amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ./government/About_LSC/commission_report.txt
 ./government/About_LSC/State_Planning_Report.txt
 ./government/Env_Prot_Agen/multi102902.txt
@@ -106,8 +111,7 @@ According to `man`, the `find -s` traverses the file hierarchies in lexographica
 ./911report/chapter-9.txt
 ./911report/chapter-12.txt
 ```
->
-
+</blockquote>
 
 
 **Example 2**
