@@ -184,7 +184,8 @@ amicable@Alexas-MacBook-Pro technical % find . -user amicable | head -n 10
 </blockquote>
 
 **Example 2**
-
+<blockquote>
+    
 **Working Directory:** `terminal/`
 
 I then wanted to see what would happen if I put in a user that did not exist. I thought either nothing would print out, or there would be an error message. When I put in the user `bob`, I got an error saying that the user could not be found. This result was not surprising. 
@@ -193,14 +194,75 @@ I then wanted to see what would happen if I put in a user that did not exist. I 
 amicable@Alexas-MacBook-Pro technical % find biomed/ -user bob
 find: -user: bob: no such user
 ```
+</blockquote>
 
-### Option 3: `find -
-**Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
+### Option 3: `find -empty`
+
+**Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
+
+According to *Linux Handbook*, the `-empty` option would show all files and directories in the given path that are empty.
+
+#### Example 1
+
+<blockquote>
+
+**Working Directory:** `terminal/`
+
+I first wanted to see if there were any empty files or directories in the `government/` directory. Because nothing printed out, it seems there are no empty files or directories in the `government/` directory.
+
+```
+amicable@Alexas-MacBook-Pro technical % find government/ -empty
+```
+
+</blockquote>
+#### Example 2
+<blockquote>
+    
+**Working Directory:** `terminal/`
+
+Because there were no empty files or directories within `government/`, I then decided to check if there were any empty files or directories within the entire `terminal/` directory. Since nothing also printed out, I learned that there are no empty files or directories in the entire `terminal/` directory.
+
+```
+amicable@Alexas-MacBook-Pro technical % find . -empty
+```
+</blockquote>
+
+### Option 4: `find -mmin`
+
+**Source 1:** [TecMint](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
+**Source 2:** [BuildThis](https://buildthis.com/ds_store-files-and-why-you-should-know-about-them/)
+
+The `find -mmin` option finds files that was modified on, before, or after a certain time depending on how the command is used. *TecMint* provides an example of `find / -mmin -60`, which "find[s] all the files modified in the last hour."
 
 **Example 1**
-**Example 2**
 
-### Option 4: Here we go
+**Working Directory: `terminal/`
+<blockquote>
 
-**Example 1**
+Because these files were cloned onto my local machine today, I was curious to see what would happen if I checked if any of the files had been modified in the last hour. To my surprise, the `.DS_Store` file in the `government/` folder and the `terminal/` folder was modified. From *BuildThis*, I learned that the `.DS_Store` file gets created whenever you access a folder in Finder. The output then made sense, because I had manually navigated into the `government/` folder beforehand. 
+
+```
+amicable@Alexas-MacBook-Pro technical % find . -mmin -60
+.
+./government
+./government/.DS_Store
+./.DS_Store
+```
+    
+</blockquote>
+
 **Example 2**
+<blockquote>
+
+**Working Directory:** `terminal/`
+
+I decided to further test the command's functionality by manually modifying an existing file. I navigated to the folder where the repository was located and opened `biomed/`. Within `biomed/`, I then opened a file called `1468-6708-3-1.txt` inside and saved in some added text to the file. I then ran the command `file . -mmin -5`. The output was not surprising. I saw that the `.DS_Store` file for `terminal/` had been updated, as well as `.DS_Store` for the `biomed/` folder. I also saw the file that I had modified was printed out.
+
+```
+amicable@Alexas-MacBook-Pro technical % find . -mmin -5
+./.DS_Store
+./biomed
+./biomed/1468-6708-3-1.txt
+```
+    
+</blockquote>
