@@ -1,10 +1,10 @@
 # Lab Report 3
 
-## Part 1
+# Part 1
 
 For this part, I have chosen the bug with the `reverseinPlace()` method in `ArrayExamples.java`.
 
-### A failure inducing input for the buggy program
+## A failure inducing input for the buggy program
 
 ```java
 @Test 
@@ -15,7 +15,7 @@ public void testReverseInPlace2() {
 }
 ```
 
-### An input that doesn't produce a failure
+## An input that doesn't produce a failure
 
 ```java
 @Test 
@@ -26,7 +26,7 @@ public void testReverseInPlace1() {
 }
 ```
 
-### The symptom
+## The symptom
 
 This screenshot shows the failure within the `ArrayTests.java` file.
 ![Image](lab3_failure.png)
@@ -34,9 +34,9 @@ This screenshot shows the failure within the `ArrayTests.java` file.
 This screenshot shows the "Test Results" output.
 ![Image](lab3_test.png)
 
-### The bug
+## The bug
 
-**Before**
+### Before
 ```java
 // Changes the input array to be in reversed order
 static void reverseInPlace(int[] arr) {
@@ -46,7 +46,7 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
-**After**
+### After
 ```java
 // Changes the input array to be in reversed order
 static void reverseInPlace(int[] arr) {
@@ -63,11 +63,11 @@ The issue with the "Before" code is that it tries to replace each element withou
 
 The fix in the "After" code creates a new temporary array called `temp` to store all of the original values in the `arr` array. To make sure that `arr` itself is not modified, `temp` is initialized using `arr.length` and the values from `arr` are copied over one by one using a `for` loop. `arr` is then modified by using values from the `temp` array which avoids the problem with the values being overwritten while still modifying the original array to fit the criteria of reversing in place.
 
-## Part 2
+# Part 2
 
 For this part, I am choosing to research the `find` command.
 
-### Option 1: `find -size`
+## Option 1: `find -size`
 
 **Source 1:** Entering `man find` into the terminal.\
 **Source 2:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
@@ -148,7 +148,7 @@ Since this list is longer than the one searching for directories less than 2 kil
 
 &nbsp;\
 &nbsp;
-### Option 2: `find -user`
+## Option 2: `find -user`
 
 
 **Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)\
@@ -195,7 +195,7 @@ find: -user: bob: no such user
 
 &nbsp;\
 &nbsp;
-### Option 3: `find -empty`
+## Option 3: `find -empty`
 
 **Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
 
@@ -230,7 +230,7 @@ amicable@Alexas-MacBook-Pro technical % find . -empty
 
 &nbsp;\
 &nbsp;
-### Option 4: `find -mmin`
+## Option 4: `find -mmin`
 
 **Source 1:** [TecMint](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)\
 **Source 2:** [BuildThis](https://buildthis.com/ds_store-files-and-why-you-should-know-about-them/)
