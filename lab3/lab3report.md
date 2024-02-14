@@ -193,7 +193,7 @@ find: -user: bob: no such user
 ```
 
 &nbsp;\
-&nbsp;\
+&nbsp;
 ### Option 3: `find -empty`
 
 **Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
