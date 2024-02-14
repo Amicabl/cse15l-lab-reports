@@ -66,7 +66,8 @@ The fix in the "After" code creates a new temporary array called `temp` to store
 # Part 2
 
 For this part, I am choosing to research the `find` command.
-
+&nbsp;\
+&nbsp;
 ## Option 1: `find -size`
 
 **Source 1:** Entering `man find` into the terminal.\
