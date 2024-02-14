@@ -236,9 +236,9 @@ The `find -mmin` option finds files that was modified on, before, or after a cer
 
 **Example 1**
 
-**Working Directory: `terminal/`**
-
 <blockquote>
+
+**Working Directory: `terminal/`**
 
 Because these files were cloned onto my local machine today, I was curious to see what would happen if I checked if any of the files had been modified in the last hour. To my surprise, the `.DS_Store` file in the `government/` folder and the `terminal/` folder was modified. From *BuildThis*, I learned that the `.DS_Store` file gets created whenever you access a folder in Finder. The output then made sense, because I had manually navigated into the `government/` folder beforehand. 
 
