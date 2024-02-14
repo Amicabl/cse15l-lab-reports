@@ -73,8 +73,8 @@ For this part, I am choosing to research the `find` command.
 **Source 2:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
 
 According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
-\
-\
+
+
 ***Example 1***
  
     
@@ -114,8 +114,8 @@ amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ./911report/chapter-9.txt
 ./911report/chapter-12.txt
 ```
-\
-\
+&nbsp;
+&nbsp;
 ***Example 2***
 
     
