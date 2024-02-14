@@ -67,9 +67,11 @@ The fix in the "After" code creates a new temporary array called `temp` to store
 
 For this part, I am choosing to research the `find` command.
 
-### `find -size`
+### Option 1: `find -size`
+
 **Source 1:** Entering `man find` into the terminal.
-**Source 2:** [Link](https://www.computerhope.com/unix/ufind.htm#Operators)
+
+**Source 2:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
 
 According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 
@@ -147,18 +149,50 @@ Since this list is longer than the one searching for directories less than 2 kil
 
 </blockquote>
 
+### Option 2: `find -user`
 
+**Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
+**Source 2:** [nixCraft](https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/)
 
-**Example 2**
+According to nixCraft, `find -user` finds all files that are owned by the specified user.
 
-### Option 2: Here we go
-**Source:** 
+**Example 1: `find . -user amicable`** 
+<blockquote>
 
-**Example 1**
-**Example 2**
+**Working Directory:** `terminal/`
 
-### Option 3: Here we go
-**Source:** 
+Because I forked and cloned the repo from Github, I was curious to see whether or not I would be the user that owns all of the files. To test this, I decided to check the `terminal/` directory with my own username. 
+
+A very long list of files printed out, so I decided to pipe the results into `head` to only display the first 10 lines of the output.
+
+```
+amicable@Alexas-MacBook-Pro technical % find . -user amicable | head -n 10
+.
+./government
+./government/About_LSC
+./government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+./government/About_LSC/Progress_report.txt
+./government/About_LSC/Strategic_report.txt
+./government/About_LSC/Comments_on_semiannual.txt
+./government/About_LSC/Special_report_to_congress.txt
+./government/About_LSC/CONFIG_STANDARDS.txt
+./government/About_LSC/commission_report.txt
+```
+</blockquote>
+
+**Example 2: `find biomed/ -user bob`**
+
+**Working Directory:** `terminal/`
+
+I then wanted to see what would happen if I put in a user that did not exist. I thought either nothing would print out, or there would be an error message. When I put in the user `bob`, I got an error saying that the user could not be found. This result was not surprising. 
+
+```
+amicable@Alexas-MacBook-Pro technical % find biomed/ -user bob
+find: -user: bob: no such user
+```
+
+### Option 3: `find -
+**Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
 
 **Example 1**
 **Example 2**
