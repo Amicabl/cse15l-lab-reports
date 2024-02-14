@@ -75,7 +75,6 @@ For this part, I am choosing to research the `find` command.
 According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 
 &nbsp;\
-&nbsp;\
 ***Example 1***
  
     
@@ -116,7 +115,6 @@ amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ./911report/chapter-12.txt
 ```
 &nbsp;\
-&nbsp;\
 ***Example 2***
 
     
@@ -149,8 +147,6 @@ government//Media
 Since this list is longer than the one searching for directories less than 2 kilobytes, I asserted that `government//Gen_Account_Office` and `government//Media` must have sizes greater than 2 kilobytes. 
 &nbsp;\
 &nbsp;\
-
-
 ### Option 2: `find -user`
 
 
@@ -159,7 +155,6 @@ Since this list is longer than the one searching for directories less than 2 kil
 
 According to nixCraft, `find -user` finds all files that are owned by the specified user.
 
-&nbsp;\
 &nbsp;\
 ***Example 1***
 
@@ -185,7 +180,6 @@ amicable@Alexas-MacBook-Pro technical % find . -user amicable | head -n 10
 ```
 
 &nbsp;\
-&nbsp;\
 ***Example 2***
 
     
@@ -199,14 +193,12 @@ find: -user: bob: no such user
 ```
 &nbsp;\
 &nbsp;\
-
 ### Option 3: `find -empty`
 
 **Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
 
 According to *Linux Handbook*, the `-empty` option would show all files and directories in the given path that are empty.
 
-&nbsp;\
 &nbsp;\
 ***Example 1***
 
@@ -222,7 +214,6 @@ amicable@Alexas-MacBook-Pro technical % find government/ -empty
 
 
 &nbsp;\
-&nbsp;\
 ***Example 2***
 
 
@@ -236,7 +227,6 @@ amicable@Alexas-MacBook-Pro technical % find . -empty
 ```
 &nbsp;\
 &nbsp;\
-
 ### Option 4: `find -mmin`
 
 **Source 1:** [TecMint](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)\
@@ -244,7 +234,6 @@ amicable@Alexas-MacBook-Pro technical % find . -empty
 
 The `find -mmin` option finds files that was modified on, before, or after a certain time depending on how the command is used. *TecMint* provides an example of `find / -mmin -60`, which "find[s] all the files modified in the last hour."
 
-&nbsp;\
 &nbsp;\
 ***Example 1***
 
@@ -262,7 +251,6 @@ amicable@Alexas-MacBook-Pro technical % find . -mmin -60
 ./.DS_Store
 ```
     
-&nbsp;\
 &nbsp;\
 ***Example 2***
 
