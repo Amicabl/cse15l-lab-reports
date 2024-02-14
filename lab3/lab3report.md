@@ -215,7 +215,9 @@ amicable@Alexas-MacBook-Pro technical % find government/ -empty
 ```
 
 </blockquote>
+
 **Example 2**
+
 <blockquote>
     
 **Working Directory:** `terminal/`
