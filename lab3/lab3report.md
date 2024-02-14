@@ -202,7 +202,7 @@ find: -user: bob: no such user
 
 According to *Linux Handbook*, the `-empty` option would show all files and directories in the given path that are empty.
 
-#### Example 1
+**Example 1**
 
 <blockquote>
 
@@ -215,7 +215,7 @@ amicable@Alexas-MacBook-Pro technical % find government/ -empty
 ```
 
 </blockquote>
-#### Example 2
+**Example 2**
 <blockquote>
     
 **Working Directory:** `terminal/`
