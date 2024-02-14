@@ -72,7 +72,7 @@ For this part, I am choosing to research the `find` command.
 **Source 1:** Entering `man find` into the terminal.\
 **Source 2:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)
 
-According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From "Computer Hope," I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
+According to `man`, the `find -size` traverses the file hierarchies in lexographical order. From *Computer Hope*, I learned that the `-size` command is considered a test because it returns true if the file matches the given condition. 
 
 &nbsp;\
 ***Example 1***
@@ -154,7 +154,7 @@ Since this list is longer than the one searching for directories less than 2 kil
 **Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)\
 **Source 2:** [nixCraft](https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/)
 
-According to nixCraft, `find -user` finds all files that are owned by the specified user.
+According to *nixCraft*, `find -user` finds all files that are owned by the specified user.
 
 &nbsp;\
 ***Example 1***
