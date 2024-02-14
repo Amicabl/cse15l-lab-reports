@@ -145,8 +145,9 @@ government//Media
 ```
 
 Since this list is longer than the one searching for directories less than 2 kilobytes, I asserted that `government//Gen_Account_Office` and `government//Media` must have sizes greater than 2 kilobytes. 
+
 &nbsp;\
-&nbsp;\
+&nbsp;
 ### Option 2: `find -user`
 
 
@@ -226,8 +227,9 @@ Because there were no empty files or directories within `government/`, I then de
 ```
 amicable@Alexas-MacBook-Pro technical % find . -empty
 ```
+
 &nbsp;\
-&nbsp;\
+&nbsp;
 ### Option 4: `find -mmin`
 
 **Source 1:** [TecMint](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)\
