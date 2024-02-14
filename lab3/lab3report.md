@@ -77,7 +77,7 @@ According to `man`, the `find -size` traverses the file hierarchies in lexograph
 &NewLine;
 
 **Example 1**
-<blockquote> 
+ 
     
 **Working Directory:** `terminal/`
 
@@ -115,10 +115,10 @@ amicable@Alexas-MacBook-Pro technical % find . -size +100k
 ./911report/chapter-9.txt
 ./911report/chapter-12.txt
 ```
-</blockquote>
+
 
 **Example 2**
-<blockquote>
+
     
 **Working Directory:** `terminal/`
 
@@ -148,7 +148,7 @@ government//Media
 
 Since this list is longer than the one searching for directories less than 2 kilobytes, I asserted that `government//Gen_Account_Office` and `government//Media` must have sizes greater than 2 kilobytes. 
 
-</blockquote>
+
 
 ### Option 2: `find -user`
 
@@ -160,7 +160,7 @@ According to nixCraft, `find -user` finds all files that are owned by the specif
 
 
 **Example 1**
-<blockquote>
+
 
 **Working Directory:** `terminal/`
 
@@ -181,10 +181,10 @@ amicable@Alexas-MacBook-Pro technical % find . -user amicable | head -n 10
 ./government/About_LSC/CONFIG_STANDARDS.txt
 ./government/About_LSC/commission_report.txt
 ```
-</blockquote>
+
 
 **Example 2**
-<blockquote>
+
     
 **Working Directory:** `terminal/`
 
@@ -194,7 +194,7 @@ I then wanted to see what would happen if I put in a user that did not exist. I 
 amicable@Alexas-MacBook-Pro technical % find biomed/ -user bob
 find: -user: bob: no such user
 ```
-</blockquote>
+
 
 ### Option 3: `find -empty`
 
@@ -204,7 +204,7 @@ According to *Linux Handbook*, the `-empty` option would show all files and dire
 
 **Example 1**
 
-<blockquote>
+
 
 **Working Directory:** `terminal/`
 
@@ -214,11 +214,11 @@ I first wanted to see if there were any empty files or directories in the `gover
 amicable@Alexas-MacBook-Pro technical % find government/ -empty
 ```
 
-</blockquote>
+
 
 **Example 2**
 
-<blockquote>
+
     
 **Working Directory:** `terminal/`
 
@@ -227,7 +227,7 @@ Because there were no empty files or directories within `government/`, I then de
 ```
 amicable@Alexas-MacBook-Pro technical % find . -empty
 ```
-</blockquote>
+
 
 ### Option 4: `find -mmin`
 
@@ -238,7 +238,7 @@ The `find -mmin` option finds files that was modified on, before, or after a cer
 
 **Example 1**
 
-<blockquote>
+
 
 **Working Directory: `terminal/`**
 
@@ -252,10 +252,10 @@ amicable@Alexas-MacBook-Pro technical % find . -mmin -60
 ./.DS_Store
 ```
     
-</blockquote>
+
 
 **Example 2**
-<blockquote>
+
 
 **Working Directory:** `terminal/`
 
@@ -268,4 +268,4 @@ amicable@Alexas-MacBook-Pro technical % find . -mmin -5
 ./biomed/1468-6708-3-1.txt
 ```
     
-</blockquote>
+
