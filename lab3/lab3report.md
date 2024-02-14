@@ -191,6 +191,7 @@ I then wanted to see what would happen if I put in a user that did not exist. I 
 amicable@Alexas-MacBook-Pro technical % find biomed/ -user bob
 find: -user: bob: no such user
 ```
+
 &nbsp;\
 &nbsp;\
 ### Option 3: `find -empty`
