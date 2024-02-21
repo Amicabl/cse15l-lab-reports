@@ -233,7 +233,7 @@ amicable@Alexas-MacBook-Pro technical % find . -empty
 &nbsp;
 ## Option 4: `find -mmin`
 
-**Source 1:** TecMint: <https://www.tecmint.com/35-practical-examples-of-linux-find-command/>
+**Source 1:** TecMint: <https://www.tecmint.com/35-practical-examples-of-linux-find-command/>\
 **Source 2:** BuildThis: <https://buildthis.com/ds_store-files-and-why-you-should-know-about-them/>
 
 The `find -mmin` option finds files that was modified on, before, or after a certain time depending on how the command is used. *TecMint* provides an example of `find / -mmin -60`, which "find[s] all the files modified in the last hour."
