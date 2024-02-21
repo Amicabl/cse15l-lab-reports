@@ -152,8 +152,8 @@ Since this list is longer than the one searching for directories less than 2 kil
 ## Option 2: `find -user`
 
 
-**Source 1:** [Computer Hope](https://www.computerhope.com/unix/ufind.htm#Operators)\
-**Source 2:** [nixCraft](https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/)
+**Source 1:** Computer Hope: <https://www.computerhope.com/unix/ufind.htm#Operators>
+**Source 2:** nixCraft: <https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/>
 
 According to *nixCraft*, `find -user` finds all files that are owned by the specified user.
 
@@ -198,7 +198,7 @@ find: -user: bob: no such user
 &nbsp;
 ## Option 3: `find -empty`
 
-**Source 1:** [Linux Handbook](https://linuxhandbook.com/find-command-examples/)
+**Source 1:** Linux Handbook: <https://linuxhandbook.com/find-command-examples/>
 
 According to *Linux Handbook*, the `-empty` option would show all files and directories in the given path that are empty.
 
@@ -233,8 +233,8 @@ amicable@Alexas-MacBook-Pro technical % find . -empty
 &nbsp;
 ## Option 4: `find -mmin`
 
-**Source 1:** [TecMint](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)\
-**Source 2:** [BuildThis](https://buildthis.com/ds_store-files-and-why-you-should-know-about-them/)
+**Source 1:** TecMint: <https://www.tecmint.com/35-practical-examples-of-linux-find-command/>
+**Source 2:** BuildThis: <https://buildthis.com/ds_store-files-and-why-you-should-know-about-them/>
 
 The `find -mmin` option finds files that was modified on, before, or after a certain time depending on how the command is used. *TecMint* provides an example of `find / -mmin -60`, which "find[s] all the files modified in the last hour."
 
