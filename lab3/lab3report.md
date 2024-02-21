@@ -50,18 +50,18 @@ static void reverseInPlace(int[] arr) {
 ```java
 // Changes the input array to be in reversed order
 static void reverseInPlace(int[] arr) {
-    int[] temp = new int[arr.length];
-    for (int i = 0; i < arr.length; i += 1) {
-      temp[i] = arr[i];
-    }
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = temp[arr.length - i - 1];
+    // Only iterate until the middle of the array
+    for (int i = 0; i < arr.length / 2; i++) {
+      // Swap element at i with its counterpart from the end
+      int temp = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = temp;
     }
 }
 ```
 The issue with the "Before" code is that it tries to replace each element without temporarily saving the original value. When the loop reaches the middle of `arr`, the values in the first part of the array have already been overwritten with the values from the second half. When it tries to set the values in the second half of the array, it does not take from the original first half of the array as intended.
 
-The fix in the "After" code creates a new temporary array called `temp` to store all of the original values in the `arr` array. To make sure that `arr` itself is not modified, `temp` is initialized using `arr.length` and the values from `arr` are copied over one by one using a `for` loop. `arr` is then modified by using values from the `temp` array which avoids the problem with the values being overwritten while still modifying the original array to fit the criteria of reversing in place.
+The fix in the "After" code stops swapping once `arr` gets to the middle. This way, nothing is overwritten. A `temp` variable is created to store the original integer in the first part of the array. The item in the first part of the array is then overwritten with the item in the second part of the array. Lastly, the item in the second part of the array is overwritten with the item stored in `temp`.
 
 # Part 2
 
