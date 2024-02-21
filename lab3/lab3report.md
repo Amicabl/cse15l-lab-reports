@@ -152,7 +152,7 @@ Since this list is longer than the one searching for directories less than 2 kil
 ## Option 2: `find -user`
 
 
-**Source 1:** Computer Hope: <https://www.computerhope.com/unix/ufind.htm#Operators>
+**Source 1:** Computer Hope: <https://www.computerhope.com/unix/ufind.htm#Operators>\
 **Source 2:** nixCraft: <https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/>
 
 According to *nixCraft*, `find -user` finds all files that are owned by the specified user.
