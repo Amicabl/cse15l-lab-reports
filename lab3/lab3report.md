@@ -61,7 +61,7 @@ static void reverseInPlace(int[] arr) {
 ```
 The issue with the "Before" code is that it tries to replace each element without temporarily saving the original value. When the loop reaches the middle of `arr`, the values in the first part of the array have already been overwritten with the values from the second half. When it tries to set the values in the second half of the array, it does not take from the original first half of the array as intended.
 
-The fix in the "After" code stops swapping once `arr` gets to the middle. This way, nothing is overwritten. A `temp` variable is created to store the original integer in the first part of the array. The item in the first part of the array is then overwritten with the item in the second part of the array. Lastly, the item in the second part of the array is overwritten with the item stored in `temp`.
+The fix in the "After" code stops swapping once `arr` gets to the middle. A `temp` variable is created to store the original integer in the first part of the array. The item in the first part of the array is then overwritten with the item in the second part of the array. Lastly, the item in the second part of the array is overwritten with the item stored in `temp`.
 
 # Part 2
 
