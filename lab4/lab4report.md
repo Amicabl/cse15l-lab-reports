@@ -12,6 +12,7 @@ This lab report will detail my process of completing a task where I use `vim` an
 
 
 
+
 **Keys pressed:** 
 ## Running the tests (should fail)
 ## Editing the code file to fix the failing test
