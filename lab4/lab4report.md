@@ -4,7 +4,7 @@ This lab report will detail my process of completing a task where I use `vim` an
 
 ## Logging into ieng6
 
-[!Image](Step1.png)
+![Image](Step1.png)
 
 **Keys pressed:** I directly typed out `ssh arobertson@ieng6.ucsd.edu` in the terminal window. Because there was no command history, I could not use the `<up>` arrow to more quickly get the command. I also tried using `<tab>` to autofill the server address, but could not since it was not recognized. 
 
