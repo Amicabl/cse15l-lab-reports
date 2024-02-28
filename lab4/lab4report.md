@@ -12,7 +12,7 @@ This lab report will detail my process of completing a task where I use `vim` an
 
 ![Image](Step2_1.png)
 
-To get the `SSH` URL, I went to the fork of the repository on my GitHub account and clicked the "Copy url to clipboard" members.
+To get the `SSH` URL, I went to the fork of the repository on my GitHub account and clicked the "Copy url to clipboard" button.
 
 ![Image](Step2_2.png)
 
