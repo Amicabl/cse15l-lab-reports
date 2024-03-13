@@ -1,6 +1,6 @@
 # Lab 5 Report
 
-This lab report will detail a debugging scenario I have created from a subset of the files provided during the Week 4 Lab on Testing. To add more of my own creativity, I have modified the provided `LinkedListExample.java` file by first fixing the original bug and then creating a `main` method. My strategy for this lab report was to code a `bash` file that would perform a function related to Linked Lists and keep working until I encountered an interesting bug. 
+This lab report will detail a debugging scenario I have created from a subset of the files provided during the Week 4 Lab on Testing. To add more of my own creativity, I have modified the provided `LinkedListExample.java` file by first fixing the original bug and then creating a `main` method. My strategy for this lab report was to write a `bash` script that would perform a function related to linked lists and keep working until I encountered an interesting bug. 
 
 # Part 1
 
