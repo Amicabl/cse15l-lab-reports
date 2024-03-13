@@ -10,10 +10,34 @@ Alexa Robertson
 
 > Hello 15L TAs,
 > 
-> I'm having a problem with my implementation of a LinkedList. For my project, I created a bash script that takes in a filename and a list of integers. The main method in my LinkedList class is supposed to take in the integer arguments that are passed into my bash script and put them into a new LinkedList. If my LinkedList implementation is working correctly, then the toString() representation of this LinkedList should be the same as the arguments I passed in.
+> I'm having a problem with my implementation of a linked list. For my project, I created a bash script that takes in a filename and a list of integers. The `main` method in my `LinkedList` class is supposed to take in the integer arguments that are passed into my `bash` script and put them into a new `LinkedList` object. If my linked list implementation is working correctly, then the `toString()` representation of this `LinkedList` should be the same as the arguments I passed in.
 >
-> I've gotten stuck because the if statement in my bash script does not seem to be executing correctly. 
+> I've gotten stuck because the `if` statement in my `bash` script does not seem to be executing correctly. Even though the arguments I've passed in seem to be the same as the output, which I verified by using the `echo` command on the variables `$arguments` and `$output`, my program is still printing out that the "Expected linked list was not the same as observed." At first, I thought maybe I made an error in using `==`, since I know that comparing `Strings` and not `String` references requires the `equals()` method in `Java`. I'm not sure where to go from here.
+>
+> Please see the screenshot attached with the symptom and the attached files containing my code.
 
+![Image](lab5_report.png)
+
+## TA Response
+
+TA
+
+> Hello Alexa,
+>
+> You have the right idea by starting to debug using `echo` to print out what is stored in your variables `$arguments` and `$output`. However, I encourage you to think about the limitations of this approach. Printing out the variables, although a good start, does not guarantee that they are equal, even if it may look that way. Could there still be a difference between the variables that might not be visible from the terminal?
+>
+> Try researching other ways that you could detect a potential difference. What about the length of the `String` stored in each variable?
+
+## Student Follow-Up
+
+After reading the TA's response, the student researched how to find the length of a `String` stored in a `bash` variable. The student then came across the following resource:
+
+Linux Handbook: ![https://linuxhandbook.com/bash-string-length/](https://linuxhandbook.com/bash-string-length/)
+> If you are dealing with strings in bash, you may need to know the length of string.
+>
+> Thankfully, getting length of string in bash is super simple. Let's say you have a string named my_string. Its length can be extracted as:
+>
+>`${#my_string}`
 
 ## Setup Information
 
