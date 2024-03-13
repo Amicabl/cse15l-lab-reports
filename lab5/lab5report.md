@@ -251,5 +251,9 @@ Here is what the modified code for `toString()` would look like:
 
 The addition of an `if-else` statement determines whether or not this is the last `Node` in the `LinkedList` by checking if this `Node`'s `next` is null. If `next` is null, then this is the last `Node` in the list. In this case, the extra whitespace is not concatenated to `s`.
 
+# Part 2
+
+One interesting thing I learned from the second half of lab was how to use `jdb` to debug my code. I think it's particularly helpful for infinite `while` loops. Before, I would have to guess which `while` loop was causing the problem and comment things out until the infinite loop stopped. Now, I can set a breakpoint using `jdb` and go through step by step to see what exactly is causing the infinite loop and how the variables are changing with each step. 
+
 
 
