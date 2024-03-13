@@ -6,7 +6,7 @@ This lab report will detail a debugging scenario I have created from a subset of
 
 ## Original Post
 
-Student
+**Student**
 > Hello 15L TAs,
 > 
 > I'm having a problem with my implementation of a linked list. For my project, I created a bash script that takes in a filename and a list of integers. The `main` method in my `LinkedList` class is supposed to take in the integer arguments that are passed into my `bash` script and put them into a new `LinkedList` object. If my linked list implementation is working correctly, then the `toString()` representation of this `LinkedList` should be the same as the arguments I passed in.
@@ -19,7 +19,7 @@ Student
 
 ## TA Response
 
-TA
+**TA**
 > Hello Student,
 >
 > You have the right idea by starting to debug using `echo` to print out what is stored in your variables `$arguments` and `$output`. However, I encourage you to think about the limitations of this approach. Printing out the variables, although a good start, does not guarantee that they are equal, even if it may look that way. Could there still be a difference between the variables that might not be visible from the terminal?
