@@ -6,7 +6,7 @@ This lab report will detail a debugging scenario I have created from a subset of
 
 ### File and Directory Structure
 
-This file and directory structure was generated using the `tree` command installed on my local computer.
+This file and directory structure was generated using the `tree` command installed on my local computer. The working directory is a folder I created called `Lab 5`.
 
 ```
 amicable@Alexas-MBP Lab 5 % tree
