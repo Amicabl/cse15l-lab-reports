@@ -22,7 +22,6 @@ amicable@Alexas-MBP Lab 5 % tree
 **LinkedListExample.java**
 
 ``` java
-
 import java.util.NoSuchElementException;
 
 class Node {
@@ -121,13 +120,63 @@ class LinkedList {
      * @param args The integers to populate the LinkedList with. 
      */
     public static void main (String[] args) {
+        // Creates a new LinkedList
         LinkedList myLinkedList = new LinkedList();
+
+        // Creates the first node from the first argument and sets root
         Node rootNode = new Node(Integer.valueOf(args[0]),null);
         myLinkedList.root = rootNode;
+
+        // Uses the append method to add the subsequent arguments
         for (int i = 1; i < args.length; i++) {
             myLinkedList.append(Integer.valueOf(args[i]));
         }
+
+        // Prints out the toString representation of the list
         System.out.println(myLinkedList.toString());
     }
 }
 ```
+
+**linkedlist.sh**
+``` bash
+# Takes in the filename as an argument
+javafile=$1
+
+# Extracts the class name from the filename
+classname=$(echo ${javafile%.*})
+
+# Compiles the file
+javac $javafile
+
+# Echoes whether the compilation was successful based on exit code
+if [[ $? -eq 0 ]]
+then
+    echo "Compilation successful"
+else
+    echo "Compilation not successful"
+    exit
+fi
+
+# Saves the rest of the arguments after the file name to a variable
+arguments="${@:2}"
+# Saves the output of passing in those arguments to the LinkedList class
+output=$(java LinkedList ${@:2})
+
+# Included for debugging purposes
+echo $arguments
+echo $output
+
+# If the outputted toString() of the LinkedList is the same as the arguments,
+# code was successful
+if [[ "$output" == "$arguments" ]]
+then
+    echo "Linked list creation successful"
+else
+    echo "Expected linked list was not the same as observed"
+    echo "Expected: $arguments"
+    echo "Observed: $output"
+    exit
+fi
+```
+
