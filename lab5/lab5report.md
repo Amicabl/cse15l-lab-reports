@@ -2,6 +2,19 @@
 
 This lab report will detail a debugging scenario I have created from a subset of the files provided during the Week 4 Lab on Testing. To add more of my own creativity, I have modified the provided `LinkedListExample.java` file by first fixing the original bug and then creating a `main` method. My strategy for this lab report was to code a `bash` file that would perform a function related to Linked Lists and keep working until I encountered an interesting bug. 
 
+# Part 1
+
+## Original Post
+
+Alexa Robertson
+
+> Hello 15L TAs,
+> 
+> I'm having a problem with my implementation of a LinkedList. For my project, I created a bash script that takes in a filename and a list of integers. The main method in my LinkedList class is supposed to take in the integer arguments that are passed into my bash script and put them into a new LinkedList. If my LinkedList implementation is working correctly, then the toString() representation of this LinkedList should be the same as the arguments I passed in.
+>
+> I've gotten stuck because the if statement in my bash script does not seem to be executing correctly. 
+
+
 ## Setup Information
 
 ### File and Directory Structure
@@ -179,4 +192,12 @@ else
     exit
 fi
 ```
+
+### Commands Run
+
+`bash linkedlist.sh LinkedListExample.java 5 2 1`
+
+### Description of How to Fix
+
+
 
