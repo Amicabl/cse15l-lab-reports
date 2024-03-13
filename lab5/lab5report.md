@@ -6,8 +6,7 @@ This lab report will detail a debugging scenario I have created from a subset of
 
 ## Original Post
 
-Alexa Robertson
-
+Student
 > Hello 15L TAs,
 > 
 > I'm having a problem with my implementation of a linked list. For my project, I created a bash script that takes in a filename and a list of integers. The `main` method in my `LinkedList` class is supposed to take in the integer arguments that are passed into my `bash` script and put them into a new `LinkedList` object. If my linked list implementation is working correctly, then the `toString()` representation of this `LinkedList` should be the same as the arguments I passed in.
@@ -21,8 +20,7 @@ Alexa Robertson
 ## TA Response
 
 TA
-
-> Hello Alexa,
+> Hello Student,
 >
 > You have the right idea by starting to debug using `echo` to print out what is stored in your variables `$arguments` and `$output`. However, I encourage you to think about the limitations of this approach. Printing out the variables, although a good start, does not guarantee that they are equal, even if it may look that way. Could there still be a difference between the variables that might not be visible from the terminal?
 >
@@ -32,12 +30,18 @@ TA
 
 After reading the TA's response, the student researched how to find the length of a `String` stored in a `bash` variable. The student then came across the following resource:
 
-Linux Handbook: ![https://linuxhandbook.com/bash-string-length/](https://linuxhandbook.com/bash-string-length/)
+Linux Handbook: [https://linuxhandbook.com/bash-string-length/](https://linuxhandbook.com/bash-string-length/)
 > If you are dealing with strings in bash, you may need to know the length of string.
 >
 > Thankfully, getting length of string in bash is super simple. Let's say you have a string named my_string. Its length can be extracted as:
 >
 >`${#my_string}`
+
+The student then added a couple lines to their `bash` script to check the length of `$arguments` and `$output`. 
+
+![Image](lab5_bug.png)
+
+When running the command again, the student saw that the length of `$output` was 1 longer than the length of `$arguments`. The student then figured out that there must be an extra space in the `toString()` method within the `LinkedList` class. Upon inspecting the `toString()` method, the student realized that the `while` loop always adds a blank space after the `value` of the `Node`, even if the `Node` is the last one in the `LinkedList`.
 
 ## Setup Information
 
@@ -222,6 +226,30 @@ fi
 `bash linkedlist.sh LinkedListExample.java 5 2 1`
 
 ### Description of How to Fix
+
+To fix the bug, the student can either remove the extra whitespace from the `String` stored in `$output` by slicing the `String`, or can modify the `toString()` method to avoid putting the extra whitespace when the `Node` is the last element in the LinkedList. I would recommend the second approach.
+
+Here is what the modified code for `toString()` would look like:
+``` java
+/**
+     * @return a string representation of the list
+     */
+    public String toString() {
+        Node n = this.root;
+        String s = "";
+        while(n != null) {
+            if (n.next == null) {
+                s += n.value;
+            else {
+                s += n.value + " ";
+            }
+            n = n.next;
+        }
+        return s;
+    }
+```
+
+The addition of an `if-else` statement determines whether or not this is the last `Node` in the `LinkedList` by checking if this `Node`'s `next` is null. If `next` is null, then this is the last `Node` in the list. In this case, the extra whitespace is not concatenated to `s`.
 
 
 
